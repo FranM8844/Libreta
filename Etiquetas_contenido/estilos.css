@@ -1,0 +1,23 @@
+p{
+    border: solid 2px red;
+    margin: 30px;
+    padding: 20px;
+}
+
+hr{
+    border-top: 10px solid red;
+    height: 5px;
+    background-color: gold;
+    border-bottom: 10px solid red;
+    border-radius: 8px;
+}
+
+.rojo_negrita{
+    font-weight: bold;
+    color: red;
+}
+
+#texto_especial{
+    color: green;
+
+}
