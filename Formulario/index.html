@@ -2,15 +2,16 @@
     <fieldset>
         <legend>Datos personales</legend>
         <label for="nombre">Nombre y apellidos: </label>
-        <input id="nombre" type="text" minlength="3" maxlength="15"><br>
+        <input id="nombre" name="nombre" type="text" minlength="3" maxlength="15" required placeholder="Introduzca su nombre"><br>
 
         <label for="sexo">Sexo: </label>
-        <select id="sexo">
+        <select id="sexo" name="sexo" required>
             <!--Etiqueta option-->
+            <option value="" disabled selected hidden>Seleccione un sexo</option>
             <option value="value1">Hombre</option>
-            <option value="value2" selected>Mujer</option>
-            <option value="value3" selected>No binario</option>
-            <option value="value4" selected>Pansexual</option>
+            <option value="value2">Mujer</option>
+            <option value="value3">Otro genero</option>
+            
         </select><br><br>
 
         <label>Edad: </label>
@@ -18,6 +19,10 @@
         <input type="checkbox" value="40-59"> 40-59
         <input type="checkbox" value="60-79"> 60-79<br><br>
 
+        <label for="cumple">Fecha de Nacimiento:</label>
+        <input type="date" id="cumple" name="cumple"></input><br><br>
+
+        
         <label for="email">Email: </label>
         <input id="email" type="email"><br><br>
 
@@ -50,7 +55,7 @@
         </datalist><br><br>
 
         <label for="mensaje">Escribe tu mensaje: </label>
-        <textarea rows="10" cols="50" placeholder="Mensaje" id="mensaje"></textarea>
+        <textarea rows="10" cols="50" placeholder="Mensaje que desee añadir" id="mensaje"></textarea>
     </fieldset>
     <input type="submit" value="Enviar">
 </form>
