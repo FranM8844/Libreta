@@ -2,7 +2,8 @@
     <fieldset>
         <legend>Datos personales</legend>
         <label for="nombre">Nombre y apellidos: </label>
-        <input id="nombre" name="nombre" type="text" minlength="3" maxlength="15" required placeholder="Introduzca su nombre"><br>
+        <input id="nombre" name="nombre" type="text" minlength="3" maxlength="15" required
+            placeholder="Introduzca su nombre"><br>
 
         <label for="sexo">Sexo: </label>
         <select id="sexo" name="sexo" required>
@@ -11,7 +12,7 @@
             <option value="value1">Hombre</option>
             <option value="value2">Mujer</option>
             <option value="value3">Otro genero</option>
-            
+
         </select><br><br>
 
         <label>Edad: </label>
@@ -22,12 +23,17 @@
         <label for="cumple">Fecha de Nacimiento:</label>
         <input type="date" id="cumple" name="cumple"></input><br><br>
 
-        
         <label for="email">Email: </label>
-        <input id="email" type="email"><br><br>
+        <input id="email" name="email" type="email" required placeholder="correo@ejemplo.com"
+            pattern=".+@g\.educaand\.es" title="Introduce tu correo de @g.educaand.es"><br><br>
+
+        <label for="telefono">Telefono:</label>
+        <input type="text" id="telefono" name="telefono" pattern="" required placeholder="+xx xxxxxxxxx" 
+        title="Introduzca su numero de telefono"> <br> <br>
 
         <label for="estudios">Estudios: </label>
         <select id="estudios">
+            <option value="" disabled selected hidden>Selecciona tus estudios</option>
             <optgroup label="Estudios Universitarios">
                 <option>Doctorado</option>
                 <option>Máster</option>
