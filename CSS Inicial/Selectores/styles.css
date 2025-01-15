@@ -1,0 +1,22 @@
+* {
+    color: blueviolet;
+}
+
+h1 {
+    color: lime;
+    text-align: center;
+    font-style: italic;
+}
+
+.Borde-redondo{
+    border: solid 2px;
+    border-radius: 20px;
+}
+
+#pie{
+    background-color: aquamarine;
+}
+
+article > img{
+    width: 15%;
+}
