@@ -10,14 +10,36 @@ header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    height: 23vh; /* 15% de la altura del viewport */
-    line-height: 4vh; /* Centrado vertical del texto */
+    height: 20vh; /* 15% de la altura del viewport */
+    /* line-height: 4vh; Centrado vertical del texto */
     position: static;
+}
+
+header ul{
+    list-style-type: none;
+    width: 50%;
+    margin: 0 auto;
+
+    li{
+        display: inline-block;
+    }
+}
+
+header li a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 700;
+    color: white;
+}
+
+li a:hover{
+    color:#333;
+    font-weight: 800;
 }
 
 /* Sección principal estilizada con vh y vw */
 main {
-    height: 70vh; /* 70% de la altura del viewport */
+    /* height: 70vh;  70% de la altura del viewport */
     background-color: #ffffff;
     padding: 5vw; /* 5% del ancho del viewport */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -77,7 +99,7 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Diseño responsivo para pantallas más pequeñas */
