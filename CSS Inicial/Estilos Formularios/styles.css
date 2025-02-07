@@ -1,0 +1,29 @@
+input, textarea {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.7s ease; /* Transición para el color del borde */
+ }
+ form{max-width: 500px; margin: 0 auto;}
+
+ textarea {
+    height: 150px;
+    resize: none; /* Evita que el usuario pueda redimensionar el textarea */
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ad10b3;
+
+}
+
+label.required::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+  }
